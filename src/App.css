@@ -1,0 +1,260 @@
+/* Genel Stil Ayarları */
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Navbar Stili */
+nav {
+  background-color: #004d40;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Footer Stili */
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Sayfa Başlıkları ve Paragraf Stilleri */
+h1 {
+  text-align: center;
+  color: #004d40;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+}
+
+/* Form Stilleri */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+input[type="submit"], .appointment-form button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover, .appointment-form button:hover {
+  background-color: #00332a;
+}
+
+/* Resimlerin Ortalanması ve Hizalanması */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-img {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.doctor-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Services Sayfası için Kart Stilleri */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.service-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  color: #004d40;
+}
+
+/* About Sayfası için Stiller */
+.about-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Appointment Sayfası için Stiller */
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.appointment-form {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.appointment-form label {
+  margin: 10px 0 5px;
+  color: #004d40;
+}
+
+.appointment-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+input[type="submit"], .appointment-form button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px; /* Köşeleri yuvarla */
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Geçiş efektleri */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+input[type="submit"]:hover, .appointment-form button:hover {
+  background-color: #00332a; /* Hover rengini değiştir */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Hoverda gölgeyi büyüt */
+}
+/* Home sayfası stil düzenlemeleri */
+.home-container {
+  background-image: url('assets/background-image.jpg'); /* Arka plan görseli */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Başlık gölgesi */
+}
+
+.home-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Alt başlık gölgesi */
+}
+
+.home-container .cta-button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #004d40;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-container .cta-button:hover {
+  background-color: #00332a;
+  transform: translateY(-5px); /* Hoverda butonun yükselmesi */
+}
